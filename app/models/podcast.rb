@@ -5,9 +5,9 @@ class Podcast < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   has_many :episodes
 
-  def confirmation_required?
-  	false
-  end
+  # def confirmation_required?
+  # 	false
+  # end
 
   has_attached_file :thumbnail, :styles => { :large => "1000x1000#", :medium => "550x550#" }
   validates_attachment_content_type :thumbnail, :content_type => /\Aimage\/.*\Z/
