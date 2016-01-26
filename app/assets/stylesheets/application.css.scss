@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $highlight: #EE7964;
 $dark: #2C3135;
 $light: #EDEFF5;
+@import "toastr";
 
 * {
   box-sizing: border-box;
@@ -206,6 +207,10 @@ input[type=”file”] {
 
 textarea {
   height: 8rem;
+}
+
+.gravatarify {
+  border-radius: 20px;
 }
 
 @import 'normalize';

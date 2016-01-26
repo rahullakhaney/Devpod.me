@@ -78,6 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Sets paperclip to upload to Amazon S3 by default
+  config.action_mailer.default_url_options = { host: 'http://podcasteee.herokuapp.com/' }
+
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
