@@ -14,6 +14,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'gravatarify'
 gem 'toastr-rails'
+gem "figaro"
 
 group :development, :test do
   gem 'byebug'
